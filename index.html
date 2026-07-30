@@ -268,10 +268,13 @@
       display: grid;
       grid-template-columns: minmax(260px, 36%) 1fr;
       gap: 6rem;
-      align-items: start;
+      align-items: end;
     }
     .about-left {
       position: sticky; top: 8rem;
+    }
+    .about-right {
+      padding-bottom: 1rem;
     }
 
     /* Portrait photo */
@@ -316,7 +319,7 @@
 
     .about-strip {
       display: flex; align-items: center; gap: 1.2rem;
-      margin-bottom: 3.5rem;
+      margin-bottom: 1.5rem;
     }
     .about-strip-line { flex: 1; height: 1px; background: var(--line); }
     .about-strip-num {
@@ -393,14 +396,14 @@
       display: inline-flex; align-items: center; gap: .9rem;
       font-family: 'Cormorant SC', serif;
       font-size: 10px; font-weight: 300;
-      letter-spacing: .4em; color: var(--fg);
+      letter-spacing: .4em; color: var(--gold);
       text-decoration: none;
-      border-bottom: 1px solid rgba(240,235,228,.15);
+      border-bottom: 1px solid rgba(184,144,96,.35);
       padding-bottom: 3px;
       transition: border-color .3s, color .3s, gap .3s;
     }
     .proj-link::after { content: '→'; }
-    .proj-link:hover { color: var(--gold); border-color: var(--gold); gap: 1.4rem; }
+    .proj-link:hover { color: var(--fg); border-color: var(--fg); gap: 1.4rem; }
 
     /* Project image panel */
     .project.has-img {
@@ -488,7 +491,7 @@
     .craft-row:hover .craft-idx { color: var(--gold); }
 
     .craft-name {
-      font-size: clamp(26px, 3vw, 46px);
+      font-size: clamp(20px, 2.2vw, 34px);
       font-weight: 300;
       line-height: 1.05;
       transition: color .4s;
@@ -497,17 +500,17 @@
 
     .craft-skills {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(13px, 1.25vw, 16px);
-      font-weight: 300;
+      font-size: clamp(14px, 1.3vw, 17px);
+      font-weight: 400;
       font-style: italic;
-      color: rgba(240,235,228,.42);
+      color: rgba(240,235,228,.62);
       line-height: 1.9;
-      letter-spacing: .02em;
+      letter-spacing: .03em;
       transition: color .4s;
       border-left: 1px solid var(--faint);
       padding-left: 3rem;
     }
-    .craft-row:hover .craft-skills { color: rgba(240,235,228,.65); }
+    .craft-row:hover .craft-skills { color: rgba(240,235,228,.88); }
 
     @media (max-width: 860px) {
       .craft-row-inner {
@@ -664,7 +667,7 @@
   <!-- Opening title card -->
   <div id="opening" aria-hidden="true">
     <div class="open-rule"></div>
-    <p class="open-text">A Story Begins</p>
+    <p class="open-text">Hey All</p>
     <div class="open-rule" style="animation-delay:.5s"></div>
   </div>
 
@@ -699,7 +702,6 @@
       <span class="sep">·</span>
       Editor
     </div>
-    <p class="hero-line">Grounded on set. Precise in the cut.</p>
     <div class="hero-scroll">
       <div class="hero-scroll-line"></div>
       Scroll
@@ -711,11 +713,10 @@
   ══════════════════════════════════════ -->
   <section id="about">
     <div class="about-left">
-      <div class="about-photo-wrap rv">
+      <h2 class="about-heading rv">The<br><em>Filmmaker</em></h2>
+      <div class="about-photo-wrap rv rv-d2" style="margin-top: 2rem;">
         <img src="images/fazna.jpg" alt="Fazna Harees">
       </div>
-      <span class="about-act rv rv-d1">Act I</span>
-      <h2 class="about-heading rv rv-d2">The<br><em>Filmmaker</em></h2>
     </div>
     <div class="about-right">
       <div class="about-strip rv">
@@ -723,7 +724,7 @@
         <span class="about-strip-num">001</span>
         <div class="about-strip-line"></div>
       </div>
-      <p class="about-body rv rv-d1">
+      <p class="about-body rv rv-d1" >
         <strong>Assistant Director and filmmaker</strong> with hands-on experience across
         pre-production, on-set direction, and post. Comfortable owning
         <strong>call sheets, scheduling, casting, and continuity</strong> —
@@ -741,8 +742,7 @@
        WORK
   ══════════════════════════════════════ -->
   <section id="work">
-    <span class="sc-label rv">Act II</span>
-    <h2 class="sc-title rv rv-d1">The<br><em>Work</em></h2>
+    <h2 class="sc-title rv">The <em>Work</em></h2>
 
     <!-- 01 -->
     <div class="project has-img rv">
@@ -822,8 +822,7 @@
        SKILLS
   ══════════════════════════════════════ -->
   <section id="skills">
-    <span class="sc-label rv">Act III</span>
-    <h2 class="sc-title rv rv-d1">The<br><em>Craft</em></h2>
+    <h2 class="sc-title rv">The <em>Craft</em></h2>
 
     <div class="craft-list">
 
