@@ -405,6 +405,18 @@
     .proj-link::after { content: '→'; }
     .proj-link:hover { color: var(--fg); border-color: var(--fg); gap: 1.4rem; }
 
+    .proj-laurels {
+      display: flex; align-items: center; gap: 1.2rem;
+      margin-bottom: 1.6rem;
+    }
+    .proj-laurels img {
+      height: 90px; width: auto;
+      filter: grayscale(1) brightness(1.1);
+      opacity: .85;
+      transition: opacity .3s, filter .3s;
+    }
+    .proj-laurels img:hover { opacity: 1; filter: grayscale(0) brightness(1.1); }
+
     /* Project image panel */
     .project.has-img {
       grid-template-columns: 72px 1fr 260px;
@@ -756,6 +768,10 @@
           DaVinci Resolve — shaping pacing, tone, and the final look
           from first assembly to delivery.
         </p>
+        <div class="proj-laurels">
+          <img src="images/BEST DEBUT DIRECTOR - Athvikvaruni International Film Festival - 2026.png" alt="Best Debut Director — Athvikvaruni International Film Festival 2026">
+          <img src="images/BEST DEBUT DIRECTOR - TAMIZHAGAM INTERNATIONAL FILM FESTIVAL - 2026.png" alt="Best Debut Director — Tamizhagam International Film Festival 2026">
+        </div>
         <a href="https://www.youtube.com/watch?v=oyHEoIn-y-s" target="_blank" rel="noopener" class="proj-link">Watch Film</a>
       </div>
       <div class="proj-img-wrap">
